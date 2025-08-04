@@ -1,64 +1,64 @@
-# Node
-node_modules/
-.env
-dist/
-npm-debug.log*
-
-# Python
+# Ignore Python compiled files
 __pycache__/
 *.py[cod]
-*.egg-info/
-.env
-*.pkl
+*$py.class
 
-# React/Vite
-frontend/node_modules/
-backend/node_modules/
-backend/.env
-frontend/dist/
-frontend/.env
+# Ignore Python virtual environment
+venv/
+env/
+ENV/
+*.env
 
-# Python venv and caches
-monitor/venv/
-monitor/__pycache__/
-*.pyc
-
-# Python virtual environments
-**/venv*/
-**/.venv/
-**/__pycache__/
-**/*.py[cod]
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # VS Code settings
 .vscode/
 
-# Node.js modules
-**/node_modules/
-
-# Build output
-frontend/dist/
-frontend/build/
-frontend/.next/
-
-# Environment variables
-**/.env
-
-# Log files
+# Ignore logs and cache
 *.log
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Misc
+*.bak
+*.tmp
 *.swp
+.cache/
+.mypy_cache/
+.pytest_cache/
 
-# VirtualEnv
-venv310/
-env/
+# Node.js (if you’re using it for frontend like React/Vite)
+node_modules/
+dist/
+build/
 
-# VSCode/IDE
-.vscode/
-*.log
-.DS_Store
-*.swp
+# Ignore frontend build artifacts (optional)
+web/__pycache__/
+web/*.pyc
+
+# Media (optional, if large or not needed in repo)
+*.mp4
+*.avi
+*.mov
+*.png
+*.jpg
+*.jpeg
+
+# Coverage reports
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.coverage*
+
+# PyInstaller artifacts
+*.spec
+*.manifest
+
+# Database / SQLite
+*.sqlite3
+*.db
+
+# Ignore lock files if not needed
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
